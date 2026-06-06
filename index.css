@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 transparent;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 10px;
+}
+
+/* Prose overrides for dark mode */
+.prose-invert code {
+  background: #1e293b;
+  padding: 0.15em 0.4em;
+  border-radius: 0.3em;
+  font-size: 0.85em;
+  color: #a78bfa;
+}
+.prose-invert pre {
+  background: #0f172a !important;
+  border: 1px solid #334155;
+  border-radius: 0.75rem;
+}
+.prose-invert pre code {
+  background: transparent;
+  padding: 0;
+  color: #e2e8f0;
+}
+.prose-invert h1,
+.prose-invert h2,
+.prose-invert h3,
+.prose-invert h4 {
+  color: #f1f5f9;
+}
+.prose-invert strong {
+  color: #c4b5fd;
+}
+.prose-invert blockquote {
+  border-left-color: #7c3aed;
+  color: #94a3b8;
+}
